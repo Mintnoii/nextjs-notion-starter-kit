@@ -1,25 +1,26 @@
 import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
-  // the site's root Notion page (required)
-  rootNotionPageId: '78fc5a4b88d74b0e824e29407e9f1ec1',
+  // 网站的的 root notion page(必选)
+  rootNotionPageId: 'a2d338fb2c0c4522a7aca806b4eb599a',
 
-  // if you want to restrict pages to a single notion workspace (optional)
-  // (this should be a Notion ID; see the docs for how to extract this)
-  rootNotionSpaceId: 'fde5ac74eea345278f004482710e1af3',
+	// 如果你想将页面限制为单个概念工作区(可选)
+	//(这应该是一个Notion ID; 参考文档了解如何提取这个id)
+	// rootNotionSpaceId: 'fde5ac74eea345278f004482710e1af3',
 
   // basic site info (required)
-  name: 'Transitive Bullshit',
-  domain: 'transitivebullsh.it',
-  author: 'Travis Fischer',
+  name: 'Mintnoii',
+  domain: 'mintnoii.com',
+  author: 'Mintnoii',
 
   // open graph metadata (optional)
-  description: 'Personal site of Travis Fischer aka Transitive Bullshit',
+  description: `Mintnoii's Blog`,
 
-  // social usernames (optional)
-  twitter: 'transitive_bs',
-  github: 'transitive-bullshit',
-  linkedin: 'fisch2',
+  // 社交账户昵称 (可选)
+  // twitter: 'transitive_bs',
+  github: 'Mintnoii',
+  // linkedin: 'fisch2',
+	
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
 
@@ -30,12 +31,12 @@ export default siteConfig({
   defaultPageCoverPosition: 0.5,
 
   // whether or not to enable support for LQIP preview images (optional)
-  isPreviewImageSupportEnabled: true,
+  isPreviewImageSupportEnabled: false,
 
   // whether or not redis is enabled for caching generated preview images (optional)
   // NOTE: if you enable redis, you need to set the `REDIS_HOST` and `REDIS_PASSWORD`
   // environment variables. see the readme for more info
-  isRedisEnabled: true,
+  isRedisEnabled: false,
 
   // map of notion page IDs to URL paths (optional)
   // any pages defined here will override their default URL paths
@@ -48,20 +49,20 @@ export default siteConfig({
   pageUrlOverrides: null,
 
   pageUrlAdditions: {
-    '/the-social-audio-revolution': 'c4deaf33cc924ad7a5b9f69c6ae04a01'
+    // '/the-social-audio-revolution': 'c4deaf33cc924ad7a5b9f69c6ae04a01'
   },
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages
   navigationStyle: 'custom',
   navigationLinks: [
-    {
-      title: 'About',
-      pageId: '8d0062776d0c4afca96eb1ace93a7538'
-    },
-    {
-      title: 'Contact',
-      pageId: '9a7ddf2973444067bbc5ce0a4e0e0058'
-    }
+    // {
+    //   title: 'About',
+    //   pageId: '8d0062776d0c4afca96eb1ace93a7538'
+    // },
+    // {
+    //   title: 'Contact',
+    //   pageId: '9a7ddf2973444067bbc5ce0a4e0e0058'
+    // }
   ]
 })

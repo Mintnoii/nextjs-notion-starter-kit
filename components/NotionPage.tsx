@@ -15,7 +15,7 @@ import {
 } from 'notion-utils'
 import BodyClassName from 'react-body-classname'
 import { NotionRenderer } from 'react-notion-x'
-import TweetEmbed from 'react-tweet-embed'
+// import TweetEmbed from 'react-tweet-embed'
 import { useSearchParam } from 'react-use'
 
 import * as config from '@/lib/config'
@@ -26,11 +26,11 @@ import { searchNotion } from '@/lib/search-notion'
 import { useDarkMode } from '@/lib/use-dark-mode'
 
 import { Footer } from './Footer'
-import { GitHubShareButton } from './GitHubShareButton'
+// import { GitHubShareButton } from './GitHubShareButton'
 import { Loading } from './Loading'
 import { NotionPageHeader } from './NotionPageHeader'
 import { Page404 } from './Page404'
-import { PageAside } from './PageAside'
+// import { PageAside } from './PageAside'
 import { PageHead } from './PageHead'
 import styles from './styles.module.css'
 
@@ -46,12 +46,8 @@ const Code = dynamic(() =>
       import('prismjs/components/prism-markup.js'),
       import('prismjs/components/prism-bash.js'),
       import('prismjs/components/prism-c.js'),
-      import('prismjs/components/prism-cpp.js'),
-      import('prismjs/components/prism-csharp.js'),
       import('prismjs/components/prism-docker.js'),
-      import('prismjs/components/prism-java.js'),
       import('prismjs/components/prism-js-templates.js'),
-      import('prismjs/components/prism-coffeescript.js'),
       import('prismjs/components/prism-diff.js'),
       import('prismjs/components/prism-git.js'),
       import('prismjs/components/prism-go.js'),
@@ -60,8 +56,6 @@ const Code = dynamic(() =>
       import('prismjs/components/prism-less.js'),
       import('prismjs/components/prism-makefile.js'),
       import('prismjs/components/prism-markdown.js'),
-      import('prismjs/components/prism-objectivec.js'),
-      import('prismjs/components/prism-ocaml.js'),
       import('prismjs/components/prism-python.js'),
       import('prismjs/components/prism-reason.js'),
       import('prismjs/components/prism-rust.js'),
@@ -70,7 +64,6 @@ const Code = dynamic(() =>
       import('prismjs/components/prism-solidity.js'),
       import('prismjs/components/prism-sql.js'),
       import('prismjs/components/prism-stylus.js'),
-      import('prismjs/components/prism-swift.js'),
       import('prismjs/components/prism-wasm.js'),
       import('prismjs/components/prism-yaml.js')
     ])
@@ -94,9 +87,9 @@ const Modal = dynamic(
   }
 )
 
-const Tweet = ({ id }: { id: string }) => {
-  return <TweetEmbed tweetId={id} />
-}
+// const Tweet = ({ id }: { id: string }) => {
+//   return <TweetEmbed tweetId={id} />
+// }
 
 const propertyLastEditedTimeValue = (
   { block, pageHeader },
@@ -179,7 +172,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
       Code,
       Collection,
       Modal,
-      Tweet,
+      // Tweet,
       Header: NotionPageHeader,
       propertyLastEditedTimeValue,
       propertyTextValue,
@@ -215,12 +208,12 @@ export const NotionPage: React.FC<types.PageProps> = ({
   const showTableOfContents = !!isBlogPost
   const minTableOfContentsItems = 3
 
-  const pageAside = React.useMemo(
-    () => (
-      <PageAside block={block} recordMap={recordMap} isBlogPost={isBlogPost} />
-    ),
-    [block, recordMap, isBlogPost]
-  )
+  // const pageAside = React.useMemo(
+  //   () => (
+  //     <PageAside block={block} recordMap={recordMap} isBlogPost={isBlogPost} />
+  //   ),
+  //   [block, recordMap, isBlogPost]
+  // )
 
   const footer = React.useMemo(() => <Footer />, [])
 
@@ -313,13 +306,12 @@ export const NotionPage: React.FC<types.PageProps> = ({
         mapPageUrl={siteMapPageUrl}
         mapImageUrl={mapImageUrl}
         searchNotion={config.isSearchEnabled ? searchNotion : null}
-        pageAside={pageAside}
+        // pageAside={pageAside}
         footer={footer}
         pageTitle={tagsPage && propertyToFilterName ? title : undefined}
         pageCover={pageCover}
       />
-
-      <GitHubShareButton />
+      {/* <GitHubShareButton /> */}
     </>
   )
 }
