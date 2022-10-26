@@ -1,20 +1,13 @@
-<p align="center">
-  <a href="https://transitivebullsh.it/nextjs-notion-starter-kit">
-    <img alt="Example article page" src="https://user-images.githubusercontent.com/552829/160132094-12875e09-41ec-450a-80fc-ae8cd488129d.jpg" width="689">
-  </a>
-</p>
-
-# Next.js Notion Starter Kit
+# Mintnoii's Blog
 
 > The perfect starter kit for building websites with Next.js and Notion.
 
 [![Build Status](https://github.com/transitive-bullshit/nextjs-notion-starter-kit/actions/workflows/build.yml/badge.svg)](https://github.com/transitive-bullshit/nextjs-notion-starter-kit/actions/workflows/build.yml) [![Prettier Code Formatting](https://img.shields.io/badge/code_style-prettier-brightgreen.svg)](https://prettier.io)
 
-## Intro
+## 简介
 
-This repo is what I use to power my personal blog and portfolio site [transitivebullsh.it](https://transitivebullsh.it).
-
-It uses Notion as a CMS, [react-notion-x](https://github.com/NotionX/react-notion-x), [Next.js](https://nextjs.org/), and [Vercel](https://vercel.com).
+此项目是我的博客站点项目 [www.mintnoii.com](https://mintnoii.coim)
+它使用 Notion 作为后台数据库，配合使用 [react-notion-x](https://github.com/NotionX/react-notion-x), [Next.js](https://nextjs.org/), and [Vercel](https://vercel.com) 搭建实现
 
 ## Features
 
@@ -30,11 +23,6 @@ It uses Notion as a CMS, [react-notion-x](https://github.com/NotionX/react-notio
 - Quick search via CMD+K / CMD+P
 - Responsive for different devices
 - Optimized for Next.js and Vercel
-
-## Demos
-
-- [Default demo](https://nextjs-notion-starter-kit.transitivebullsh.it) - Deployed from the `main` branch
-- [My site](https://transitivebullsh.it) - Deployed from the `transitive-bullshit` branch
 
 ## Setup
 
