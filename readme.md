@@ -7,23 +7,22 @@
 ## 简介
 
 此项目是我的博客站点项目 [www.mintnoii.com](https://mintnoii.coim)
-它使用 Notion 作为后台数据库，配合使用 [react-notion-x](https://github.com/NotionX/react-notion-x), [Next.js](https://nextjs.org/), and [Vercel](https://vercel.com) 搭建实现
+它使用 Notion 作为后台数据库，配合使用 [react-notion-x](https://github.com/NotionX/react-notion-x)，[Next.js](https://nextjs.org/) 和 [Vercel](https://vercel.com) 搭建实现
 
-## Features
+## 特性
 
-- Setup only takes a few minutes ([single config file](./site.config.ts)) 💪
-- Robust support for Notion content via [react-notion-x](https://github.com/NotionX/react-notion-x)
-- Built using Next.js, TS, and React
-- Excellent page speeds
-- Smooth image previews
-- Automatic social images
-- Automatic pretty URLs
-- Automatic table of contents
-- Full support for dark mode
-- Quick search via CMD+K / CMD+P
-- Responsive for different devices
-- Optimized for Next.js and Vercel
-
+— 安装只需几分钟([单个配置文件](./site.config.ts))💪
+- 通过[react- concept -x](https://github.com/NotionX/react-notion-x)对 Notion 内容提供强大支持
+- 使用Next.js, TS 和 React 构建
+- 卓越的页面速度
+- 平滑的图像预览
+<!-- - 自动社交形象 -->
+- 自动漂亮的 url
+- 自动目录
+- 完全支持暗模式
+- 通过 CMD+K / CMD+P 快速搜索
+- 响应不同的设备
+- 优化 Next.js 和 Vercel
 ## Setup
 
 **All config is defined in [site.config.ts](./site.config.ts).**
