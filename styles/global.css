@@ -21,7 +21,7 @@ body {
   overflow-x: hidden;
 }
 
-.static-tweet blockquote {
+/* .static-tweet blockquote {
   margin: 0;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -32,9 +32,13 @@ body {
 .static-tweet-emoji {
   height: 1.2em !important;
   width: 1.2em !important;
-}
+} */
 
 .searchInput {
   color: var(--fg-color);
   caret-color: var(--fg-color);
+}
+
+.notion-aside-table-of-contents-header {
+	display: none;
 }
