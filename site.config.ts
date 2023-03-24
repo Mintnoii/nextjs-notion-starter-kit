@@ -4,9 +4,9 @@ export default siteConfig({
   // 网站的的 root notion page(必选)
   rootNotionPageId: 'a2d338fb2c0c4522a7aca806b4eb599a',
 
-	// 如果你想将页面限制为单个概念工作区(可选)
-	//(这应该是一个Notion ID; 参考文档了解如何提取这个id)
-	// rootNotionSpaceId: 'fde5ac74eea345278f004482710e1af3',
+  // 如果你想将页面限制为单个概念工作区(可选)
+  //(这应该是一个Notion ID; 参考文档了解如何提取这个id)
+  // rootNotionSpaceId: 'fde5ac74eea345278f004482710e1af3',
 
   // basic site info (required)
   name: 'Mintnoii',
@@ -20,7 +20,7 @@ export default siteConfig({
   // twitter: 'transitive_bs',
   github: 'Mintnoii',
   // linkedin: 'fisch2',
-	
+
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
 
@@ -52,17 +52,12 @@ export default siteConfig({
     // '/the-social-audio-revolution': 'c4deaf33cc924ad7a5b9f69c6ae04a01'
   },
 
-  // whether to use the default notion navigation style or a custom one with links to
-  // important pages
+  // 是使用 Notion 默认导航样式还是具有指向重要页面链接的自定义 notion 样式
   navigationStyle: 'custom',
   navigationLinks: [
-    // {
-    //   title: 'About',
-    //   pageId: '8d0062776d0c4afca96eb1ace93a7538'
-    // },
-    // {
-    //   title: 'Contact',
-    //   pageId: '9a7ddf2973444067bbc5ce0a4e0e0058'
-    // }
+    {
+      title: '今天学到了',
+      pageId: 'd42b56b4e2da41db81878424f6a7dfe3'
+    }
   ]
 })

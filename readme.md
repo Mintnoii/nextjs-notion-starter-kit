@@ -10,3 +10,12 @@
 
 - yarn build
 - yarn dev
+
+## 备注
+
+- 自定义的 NotionPageHeader 组件中的 Breadcrumbs 会根据主页面的子页面来生成，所以需要将所有的页面放到一个主页面中
+
+## TODO
+
+- 优化路由 hash
+- blog 时间格式

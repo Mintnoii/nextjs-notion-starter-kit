@@ -197,12 +197,13 @@ export const NotionPage: React.FC<types.PageProps> = ({
   const keys = Object.keys(recordMap?.block || {})
   const block = recordMap?.block?.[keys[0]]?.value
 
-  // const isRootPage =
-  //   parsePageId(block?.id) === parsePageId(site?.rootNotionPageId)
+  const isRootPage =
+    parsePageId(block?.id) === parsePageId(site?.rootNotionPageId)
   const isBlogPost =
     block?.type === 'page' && block?.parent_table === 'collection'
-  const isBioPage =
-    parsePageId(block?.id) === parsePageId('8d0062776d0c4afca96eb1ace93a7538')
+  // TODO: 提取到配置文件
+  // const isBioPage =
+  //   parsePageId(block?.id) === parsePageId('d42b56b4e2da41db81878424f6a7dfe3')
 
   const showTableOfContents = !!isBlogPost
   const minTableOfContentsItems = 3
@@ -217,14 +218,14 @@ export const NotionPage: React.FC<types.PageProps> = ({
   const footer = React.useMemo(() => <Footer />, [])
 
   const pageCover = React.useMemo(() => {
-    if (isBioPage) {
+    if (isRootPage) {
       return (
         <HeroHeader className='notion-page-cover-wrapper notion-page-cover-hero' />
       )
     } else {
       return null
     }
-  }, [isBioPage])
+  }, [isRootPage])
 
   if (router.isFallback) {
     return <Loading />
