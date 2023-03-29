@@ -35,37 +35,22 @@ export const PageHead: React.FC<
       {site && (
         <>
           <meta property='og:site_name' content={site.name} />
-          <meta property='twitter:domain' content={site.domain} />
         </>
-      )}
-
-      {config.twitter && (
-        <meta name='twitter:creator' content={`@${config.twitter}`} />
       )}
 
       {description && (
         <>
           <meta name='description' content={description} />
           <meta property='og:description' content={description} />
-          <meta name='twitter:description' content={description} />
         </>
       )}
 
-      {socialImageUrl ? (
-        <>
-          <meta name='twitter:card' content='summary_large_image' />
-          <meta name='twitter:image' content={socialImageUrl} />
-          <meta property='og:image' content={socialImageUrl} />
-        </>
-      ) : (
-        <meta name='twitter:card' content='summary' />
-      )}
+      {socialImageUrl && <meta property='og:image' content={socialImageUrl} />}
 
       {url && (
         <>
           <link rel='canonical' href={url} />
           <meta property='og:url' content={url} />
-          <meta property='twitter:url' content={url} />
         </>
       )}
 
@@ -78,7 +63,6 @@ export const PageHead: React.FC<
       <meta name='follow.it-verification-code' content='c0A1rAARM3FC2XRfMAke' />
 
       <meta property='og:title' content={title} />
-      <meta name='twitter:title' content={title} />
       <title>{title}</title>
     </Head>
   )

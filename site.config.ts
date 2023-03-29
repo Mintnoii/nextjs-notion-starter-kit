@@ -17,16 +17,12 @@ export default siteConfig({
   description: `Mintnoii's Blog`,
 
   // 社交账户昵称 (可选)
-  // twitter: 'transitive_bs',
   github: 'Mintnoii',
-  // linkedin: 'fisch2',
-
   // newsletter: '#', // optional newsletter URL
-  // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
 
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
-  defaultPageIcon: 'https://transitivebullsh.it/page-icon.png',
+  defaultPageIcon: '',
   defaultPageCover: 'https://transitivebullsh.it/page-cover.jpg',
   defaultPageCoverPosition: 0.5,
 

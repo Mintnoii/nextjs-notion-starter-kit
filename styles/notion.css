@@ -278,10 +278,11 @@
 .notion-orange_background,
 .notion-brown_background,
 .notion-gray_background {
-  padding: 0 0.5rem;
-  margin: 0 -0.5rem 0 -0.25rem;
+  padding: 0 0.3rem;
+  margin: 0 0.2rem 0 0.2rem;
   border-radius: 0.5rem;
-  border-bottom-left-radius: 0.125rem;
+  border-top-right-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;
   box-decoration-break: clone;
 
   background-color: none;
