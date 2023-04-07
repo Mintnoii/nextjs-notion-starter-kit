@@ -53,6 +53,7 @@ export default siteConfig({
   navigationLinks: [
     {
       title: '今天学到了',
+      icon: 'calendar',
       pageId: 'd42b56b4e2da41db81878424f6a7dfe3'
     }
   ]

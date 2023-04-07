@@ -1,3 +1,5 @@
+import { ReactElement } from 'react'
+
 import * as types from './types'
 
 export interface SiteConfig {
@@ -34,12 +36,16 @@ export interface SiteConfig {
   navigationLinks?: Array<NavigationLink>
 }
 
+export type NavIconType = 'calendar'
 export interface NavigationLink {
   title: string
+  icon?: NavIconType
   pageId?: string
   url?: string
 }
-
+export type NavlinkIconMap = {
+  [type in NavIconType]: ReactElement
+}
 export const siteConfig = (config: SiteConfig): SiteConfig => {
   return config
 }
