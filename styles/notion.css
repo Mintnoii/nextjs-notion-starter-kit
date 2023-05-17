@@ -18,6 +18,24 @@
   line-height: 1.65;
 }
 
+.notion-page-link:hover {
+  border-radius: 4px;
+}
+.notion-link {
+  border-bottom: none;
+}
+
+.notion-page-content .notion-collection {
+  margin-bottom: 45px;
+}
+
+.notion-page-content .notion-collection .notion-list-body {
+  border-top: 1px solid var(--notion-gray_background);
+}
+
+.notion-page-title-text {
+  border-bottom: none;
+}
 .index-page,
 .tags-page {
   --notion-max-width: 900px;
